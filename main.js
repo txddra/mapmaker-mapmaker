@@ -2,49 +2,64 @@
  * YOUR CODE HERE *
 ******************/
 
-const doubleAll = function(nums){
+const doubleAll = function (nums) {
   const results = [];
-for(let i =0;i< nums.length; i++){
-results.push(nums[i]*2)
-}
-return results
-}
-
-
-const yelledGreetings = function(greeting){
-let result =[];
-for (let i=0; i <greeting.length; i++){
-  result.push(greeting[i]+"!")
-}
-return result
+  for (let i = 0; i < nums.length; i++) {
+    results.push(nums[i] * 2)
+  }
+  return results
 }
 
-const absoluteValues= function(value){
-  let result =[];
-  for(let i=0; i< value.length; i++){
-result.push(Math.abs(value[i]))
+
+const yelledGreetings = function (greeting) {
+  let result = [];
+  for (let i = 0; i < greeting.length; i++) {
+    result.push(greeting[i] + "!")
+  }
+  return result
+}
+
+const absoluteValues = function (value) {
+  let result = [];
+  for (let i = 0; i < value.length; i++) {
+    result.push(Math.abs(value[i]))
 
   }
   return result
 }
 
-const upperCaseFirstLetters=function(name){
-  let nameCase =[];
-  for(let i=0; i < name.length; i++){
-nameCase.push(name[i][0].toUpperCase()+name[i].slice(1).toLowerCase())
+const upperCaseFirstLetters = function (name) {
+  let nameCase = [];
+  for (let i = 0; i < name.length; i++) {
+    nameCase.push(name[i][0].toUpperCase() + name[i].slice(1).toLowerCase())
   }
-return nameCase
+  return nameCase
 }
 
-const changeToInitials = function(name)
-{
-  let initials=[];
-for(let i = 0; i < name.length; i++){
-initials.push(name[i][1].toUpperCase()+ name[i][name[i].indexOf(' ')+1].toUpperCase())
-}
-return initials
+const changeToInitials = function (name) {
+  let initials = [];
+  for (let i = 0; i < name.length; i++) {
+    initials.push(name[i][0] + name[i][name[i].indexOf(' ') + 1].toUpperCase())
+  }
+  return initials
 }
 
+const doubleOdd = function (num) {
+  let doubled = [];
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] % 2 === 1 || num[i] % 2 === -1) {
+      doubled.push(num[i] * 2)
+    } else {
+      doubled.push(num[i])
+    }
+    return doubled
+  }
+}
+
+// const add1ToLeft = function(num){
+//   let added=[];
+// for()
+// }
 /*******************************************
 * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
 *           PLEASE DON'T TOUCH!            *
