@@ -11,6 +11,14 @@ return results
 }
 
 
+const yelledGreetings = function(greeting){
+let result =[];
+for (let i=0; i <greeting.length; i++){
+  result.push(greeting[i]+"!")
+}
+return result
+}
+
 
 
 /*******************************************
