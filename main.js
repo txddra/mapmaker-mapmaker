@@ -28,6 +28,14 @@ result.push(Math.abs(value[i]))
   return result
 }
 
+const upperCaseFirstLetters=function(name){
+  let nameCase =[];
+  for(let i=0; i < name.length; i++){
+nameCase.push(name[i][0].toUpperCase()+name[i].slice(1).toLowerCase())
+  }
+return nameCase
+}
+
 /*******************************************
 * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
 *           PLEASE DON'T TOUCH!            *
