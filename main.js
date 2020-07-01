@@ -52,8 +52,8 @@ const doubleOdd = function (num) {
     } else {
       doubled.push(num[i])
     }
-    return doubled
-  }
+    
+  }return doubled
 }
 
 // const add1ToLeft = function(num){
