@@ -40,7 +40,7 @@ const changeToInitials = function(name)
 {
   let initials=[];
 for(let i = 0; i < name.length; i++){
-initials.push(name[i][1]+ name[i][name[i].indexOf(' ')+1])
+initials.push(name[i][1].toUpperCase()+ name[i][name[i].indexOf(' ')+1].toUpperCase())
 }
 return initials
 }
