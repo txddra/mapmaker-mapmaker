@@ -36,6 +36,15 @@ nameCase.push(name[i][0].toUpperCase()+name[i].slice(1).toLowerCase())
 return nameCase
 }
 
+const changeToInitials = function(name)
+{
+  let initials=[];
+for(let i = 0; i < name.length; i++){
+initials.push(name[i][1]+ name[i][name[i].indexOf(' ')+1])
+}
+return initials.toUpperCase()
+}
+
 /*******************************************
 * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
 *           PLEASE DON'T TOUCH!            *
