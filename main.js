@@ -2,7 +2,13 @@
  * YOUR CODE HERE *
 ******************/
 
-
+const doubleAll = function(nums){
+  const results = [];
+for(let i =0;i< nums.length; i++){
+results.push(nums[i]*2)
+}
+return results
+}
 
 
 
